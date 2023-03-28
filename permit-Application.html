@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="include-sidebar-script.js"></script>
+
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='icon' href='demo/img/icon_3.png' type='image/x-icon' />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
+    <link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+    <link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+    <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
+
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+
+<body data-ma-theme="green">
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <svg viewBox="25 25 50 50">
+                    <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+            </div>
+            <span class="powerd-container">
+                <img src="demo/img/logo-files/revenue-sure.png">
+                <strong style="font-weight: 800;">A product of Nouveta LTD</strong>
+            </span>
+        </div>
+
+        <header class="header">
+            <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                <div class="navigation-trigger__inner">
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                </div>
+            </div>
+            <div class="header__logo">
+                <img src="demo/img/logo-files/nakuru-logo.png">
+                <h1>
+                    <a href="index.html" class="mb-3">Econstruction Dashboard</a>
+                    <p class="mb-0 text-capitalize">Nakuru city County Government</p>
+                </h1>
+            </div>
+            <form class="search">
+                <div class="search__inner">
+                    <input type="text" class="search__text" placeholder="Search site">
+                    <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                </div>
+            </form>
+
+            <ul class="top-nav">
+                <li class="hidden-xl-up"><a href="#" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+                <li data-toggle="tooltip" data-original-title="Time logged in" class=" top-nav__notifications p-0 m-0">
+                    <a href="#" data-toggle="dropdown" class="top-nav__notify min-width-15px">
+                        <i class="zmdi zmdi-time"></i>
+                    </a>
+
+                </li>
+
+                <li data-toggle="tooltip" data-original-title="Time logged in " class="">
+                    <a href="#" data-toggle="dropdown" class="">
+                        3 min
+                    </a>
+
+                </li>
+
+                <li class="ml-5">
+                    <a href="new-parent.html" data-toggle="tooltip" data-original-title="Tasks completed">
+                        <i class="flaticon-pulse"></i><span class="mx-3">22</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </header>
+
+
+
+        <!-- Side bar -->
+        <aside class="sidebar">
+            <div class="scrollbar-inner">
+                <div class="user">
+                    <div class="user__info" data-toggle="dropdown">
+                        <div class="avatar-char bg-warning text-black mr-3 font-weight-bold">JM</div>
+                        <div>
+                            <div class="user__name">John Mwakili</div>
+                            <div class="user__email">john@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="my-profile.html">View Profile</a>
+                        <a class="dropdown-item d-none" href="#">Settings</a>
+                        <a class="dropdown-item" href="landing-page.html">Logout</a>
+                    </div>
+                </div>
+
+                <ul class="navigation">
+                    <li class="navigation__active"><a href="index.html"><i class="flaticon-growth"></i>Home</a></li>
+
+                    <li class="navigation__sub">
+                        <a href="#"><i class="flaticon-law"></i>Permits<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li><a href="permit-Application.html"><i class="mdi mdi-sticker-plus"></i> New Application</a></li>
+                            <li><a href="approved-constructions.html"><i class="mdi mdi-file-check-outline"></i>Approved Applications</a></li>
+                            <li><a href="new-constructions.html"><i class="mdi mdi-file-document-edit-outline"></i>Ongoing Applications</a></li>
+                            <li><a href="rejected-constructions.html"><i class="mdi mdi-file-cancel-outline"></i>Rejected Applications</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="navigation__sub">
+                        <a href="#"><i class="flaticon-worker"></i>Professionals <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li><a href="professional-application.html"><i class="mdi mdi-account-multiple-plus"></i>New Application</a></li>
+                            <li><a href="new-professionals.html"><i class="mdi mdi-account-hard-hat"></i>Ongoing Applications</a></li>
+                            <li><a href="active-professionals.html"><i class="mdi mdi-account-key"></i>Active Professionals</a></li>
+                            <li><a href="inactive-professionals.html"><i class="mdi mdi-account-lock"></i>Inactive Professionals</a></li>
+                            <li><a href="rejected-professionals.html"><i class="mdi mdi-account-multiple-remove"></i>Rejected Applications</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navigation__sub">
+                        <a href="#"><i class="flaticon-law"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li class="navigation__sub">
+                                <a href="#"><i class="mdi mdi-receipt"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                                <ul class="ml-2">
+                                    <li><a href="bill-created.html"><i class="mdi mdi-cash-plus"></i>Bills Created</a></li>
+                                    <li><a href="unpaid-bills.html"><i class="mdi mdi-cash-remove"></i>Unpaid Bills</a></li>
+                                    <li><a href="partial-bills.html"><i class="mdi mdi-cash-refund"></i>Partial Bills</a></li>
+                                    <li><a href="paid-bills.html"><i class="mdi mdi-cash-check"></i>Paid Bills</a></li>
+                                    <li><a href="voided-bills.html"><i class="mdi-cash-lock mdi"></i>Voided Bills</a></li>
+                                    <li><a href="editted-bills.html"><i class="mdi mdi-database-edit"></i>Edited Bills</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="navigation__sub">
+                                <a href="#"><i class="flaticon-law"></i>Permits<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                                <ul class="ml-2">
+                                    <li><a href="#"><i class="mdi mdi-clipboard-text-multiple"></i>All Applications</a></li>
+                                    <li><a href="#"><i class="mdi mdi-file-move-outline"></i>Ongoing Applications</a></li>
+                                    <li><a href="#"><i class="mdi mdi-clipboard-check-outline"></i>Approved</a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-check-all"></i>Active permits</a></li>
+                                    <li><a href="#"><i class="mdi mdi-close-box-multiple"></i>Declined</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="navigation__sub">
+                                <a href="#"><i class="mdi mdi-account-group"></i>System Users<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                                <ul class="ml-2">
+                                    <li><a href="all-officers.html"><i class="mdi mdi-account-details"></i>All Users</a></li>
+                                    <li><a href="active-users.html"><i class="mdi mdi-account-key"></i>Active Users</a></li>
+                                    <li><a href="blocked-users.html"><i class="mdi mdi-account-lock"></i>Blocked Users</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="querries.html"><i class="zmdi zmdi-portable-wifi"></i>Enforcement Queries</a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="navigation__sub">
+                        <a href="#"><i class="ti-settings"></i>Setup<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+                        <ul>
+                            <li class="navigation__sub">
+                                <a href="#"><i class="zmdi zmdi-accounts"></i>User Accounts<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
+                                <ul class="ml-3">
+                                    <li><a href="new-user.html"><i class="zmdi zmdi-account-add"></i>New user</a></li>
+                                    <li><a href="active-users.html"><i class="zmdi zmdi-check-all"></i>Active users</a></li>
+                                    <li><a href="blocked-users.html"><i class="zmdi zmdi-block"></i>Inactive users</a></li>
+                                    <li><a href="user-management.html"><i class="zmdi zmdi-settings mr-2"></i>User Management</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="add_plate.html"><i class="flaticon-law"></i>Permits</a></li>
+                            <li><a href="add_plate.html"><i class="flaticon-worker"></i>Professionals</a></li>
+                            <li><a href="add_plate.html"><i class="mdi mdi-attachment"></i>Attachment docs</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+                    <li class="navigation__sub d-none">
+                        <a href="#"><i class="flaticon-police-badge-1"></i>Enforcers <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li><a href="all-enforcers.html">Active Enforcers</a></li>
+                            <li><a href="new-enforcer.html">New Enforcers</a></li>
+                            <li><a href="inactive-enforcers.html">Inactive Enforcers</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="navigation__sub d-none">
+                        <a href="#"><i class="zmdi zmdi-accounts-alt"></i>System Officers <i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li><a href="all-officers.html">Active Officers</a></li>
+                            <li><a href="new-user.html">New Officers</a></li>
+                            <li><a href="inactive-officers.html">Inactive Officers</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="navigation__sub">
+                        <a href="#"><i class="mdi mdi-map-marker"></i>Map<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+                        <ul>
+                            <li><a href="nakuruMap.html"><i class="mdi mdi-map-marker-check"></i> Data Map</a></li>
+                            <li><a href="map.html"><i class="mdi mdi-map-clock"></i> Live Map</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="content custom-table-container">
+            <header class="content__title px-0 border-0">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Construction Permit Application</h1>
+							</span>
+                        <div class="">
+                            <ol class="breadcrumb border-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Permits</a></li>
+                                <li class="breadcrumb-item active">Permit Application</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-12 col-md-4">
+                        <div class="section-header">
+                            <a href="#" class="btn btn-sm btn-primary" title="">Download registration form</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- search loader -->
+            <!-- show this when searching for personnel -->
+            <div class="searching-loader d-none">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+                <h5>Searching for personnel</h5>
+            </div>
+
+            <!-- modals -->
+
+            <!-- contractor modals -->
+
+            <div class="modal fade" id="newContractor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Register profession</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6>Fill in the form bellow to register the new professional</h6>
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label><strong>Contractor type</strong></label>
+                                                <select class="selectpicker form-control" data-live-search="true" title="Select profession type">
+
+                                            <!-- data tokens contain the key words helps with seraching -->
+                                            <option data-tokens="Surveyors">Company</option>
+                                            <option data-tokens="Architect">Individual</option>
+                                          </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label><strong>Profession</strong></label>
+                                                <select class="selectpicker form-control" data-live-search="true" title="Choose profession type">
+
+                                            <!-- data tokens contain the key words helps with seraching -->
+                                            <option data-tokens="Surveyors">Surveyors</option>
+                                            <option data-tokens="Architect">Architect</option>
+                                            <option data-tokens="Engineer">Engineer</option>
+                                          </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Surname</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter surname">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Other names</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter other name's">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Certificate number</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter certificate No.">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Governing body</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter governing body">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="form-group showPerson d-none animate fade-in-down">
+                                                <label><strong>Id number</strong></label>
+                                                <input type="text" class="form-control " placeholder="Enter contractor's ID/PPT No.">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Phone Number</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Email Address</strong></label>
+                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>P.O Box.</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Town</strong></label>
+                                        <select class="form-control">
+                                    <option>-- Select type --</option>
+                                    <option >Individual</option>
+                                    <option>Company</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Attachments</strong></label>
+                                    <h6>Include an attachments that proves legitimacy of the applicant</h6>
+                                    <input type="file" class="d-none contractor-Attachment personnel-attachment" accept=".png,.pdf,.gif, .jpeg, .jpg" id="contractor-attachment">
+                                    <label for="contractor-attachment" class="personnel-attachment border-danger">
+                                <span class="mdi mdi-file-document-multiple-outline"></span>
+                                <h6>Attach document</h6>
+                                <p class="small text-danger font-weight-bold">* Not selected *</p>
+                              
+                            </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn--icon-text"><i class="mdi mdi-check-all"></i> Submit Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modals -->
+
+            <!-- newArchitect -->
+
+            <div class="modal fade" id="newArchitect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Register Architect</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6>Fill in the form bellow to register the new archiitect</h6>
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label><strong>Architect type</strong></label>
+                                                <select class="form-control architectType">
+                                              <option value="0">-- Select type --</option>
+                                              <option value="individual" selected>Individual</option>
+                                              <option value="company">Company</option>
+                                          </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Architect's Number</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter contractor's No.">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group showPerson d-none animate fade-in-down">
+                                                <label><strong>Id number</strong></label>
+                                                <input type="text" class="form-control " placeholder="Enter contractor's ID/PPT No.">
+                                            </div>
+                                            <div class="form-group showCompany d-none fade-in-down">
+                                                <label><strong>KRA Pin</strong></label>
+                                                <input type="text" class="form-control " placeholder="Enter company's KRA Pin">
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group showPerson d-none animate fade-in-down">
+                                        <label><strong>Full Names</strong></label>
+                                        <input type="text" class="form-control " placeholder="Enter Full Names">
+                                    </div>
+
+                                    <div class="form-group showCompany d-none animate fade-in-down">
+                                        <label><strong>Company's Name</strong></label>
+                                        <input type="text" class="form-control " placeholder="Enter company's Name">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Phone Number</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Email Address</strong></label>
+                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>P.O Box.</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Town</strong></label>
+                                        <select class="form-control">
+                                    <option>-- Select type --</option>
+                                    <option >Individual</option>
+                                    <option>Company</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Attachments</strong></label>
+                                    <h6>Include an attachments that proves legitimacy of the applicant</h6>
+                                    <input type="file" class="d-none contractor-Attachment personnel-attachment" accept=".png,.pdf,.gif, .jpeg, .jpg" id="architect-attachment">
+                                    <label for="architect-attachment" class="personnel-attachment border-danger">
+                                <span class="mdi mdi-file-document-multiple-outline"></span>
+                                <h6>Attach document</h6>
+                                <p class="small text-danger font-weight-bold">* Not selected *</p>
+                              
+                            </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn--icon-text"><i class="mdi mdi-check-all"></i> Submit Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- new enginerr -->
+            <div class="modal fade" id="newArchitect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Register Structural Engineer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6>Fill in the form bellow to register the new Structural Engineer</h6>
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label><strong>Structural Engineer type</strong></label>
+                                                <select class="form-control engType">
+                                              <option value="0">-- Select type --</option>
+                                              <option value="individual" selected>Individual</option>
+                                              <option value="company">Company</option>
+                                          </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group">
+                                                <label><strong>Architect's Number</strong></label>
+                                                <input type="text" class="form-control" placeholder="Enter contractor's No.">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-sm-12 col-md-6">
+                                            <div class="form-group showPerson d-none animate fade-in-down">
+                                                <label><strong>Id number</strong></label>
+                                                <input type="text" class="form-control " placeholder="Enter contractor's ID/PPT No.">
+                                            </div>
+                                            <div class="form-group showCompany d-none fade-in-down">
+                                                <label><strong>KRA Pin</strong></label>
+                                                <input type="text" class="form-control " placeholder="Enter company's KRA Pin">
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group showPerson d-none animate fade-in-down">
+                                        <label><strong>Full Names</strong></label>
+                                        <input type="text" class="form-control " placeholder="Enter Full Names">
+                                    </div>
+
+                                    <div class="form-group showCompany d-none animate fade-in-down">
+                                        <label><strong>Company's Name</strong></label>
+                                        <input type="text" class="form-control " placeholder="Enter company's Name">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Phone Number</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Email Address</strong></label>
+                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>P.O Box.</strong></label>
+                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><strong>Town</strong></label>
+                                        <select class="form-control">
+                                    <option>-- Select type --</option>
+                                    <option >Individual</option>
+                                    <option>Company</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label><strong>Attachments</strong></label>
+                                    <h6>Include an attachments that proves legitimacy of the applicant</h6>
+                                    <input type="file" class="d-none contractor-Attachment personnel-attachment" accept=".png,.pdf,.gif, .jpeg, .jpg" id="eng-attachment">
+                                    <label for="eng-attachment" class="personnel-attachment border-danger">
+                                <span class="mdi mdi-file-document-multiple-outline"></span>
+                                <h6>Attach document</h6>
+                                <p class="small text-danger font-weight-bold">* Not selected *</p>
+                              
+                            </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn--icon-text"><i class="mdi mdi-check-all"></i> Submit Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- modals -->
+
+            <div class="row">
+
+
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="create-form">
+                        <div class="col-12 p-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <ul class="nav nav-pills application-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active gen-info-link" href="#"><i class="mdi mdi-floor-plan mr-2"></i>Application</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link occupation-link" href="#"><i class="mdi  mdi-office-building-marker  mr-2"></i>Plot Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link ben-link" href="#"><i class="mdi mdi-account-star mr-2"></i>Project Owner</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link doc-link" href="#"><i class="mdi mdi-receipt mr-2"></i>Billing</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <hr>
+
+                                    <form class="membership-form">
+
+                                        <div class="row clearfix form-occupation animated fadeInRight">
+                                            <div class="col-md-12">
+                                                <h4 class="card-title">Project details</h4>
+                                                <h6 class="card-subtitle">Enter the form bellow. Fields with <strong class="text-danger">(*)</strong> are required.</h6>
+                                                <hr>
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <h5 class="mb-4"><strong>General project's details</strong></h5>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Application Type<span class="text-danger">*</span></strong></label>
+                                                    <select class="selectpicker form-control" data-live-search="true">
+
+                                                        <!-- the data tokens refer to search key words -->
+                                                        <option data-tokens="ketchup mustard">Option 1</option>
+                                                        <option data-tokens="mustard">Option 2</option>
+                                                        <option data-tokens="frosting">Option 3</option>
+                                                      </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Project's title <span class="text-danger">*</span></strong></label>
+                                                    <input type="text" class="form-control form-control-lg" placeholder="Enter project's title">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Project's Value<span class="text-danger">*</span></strong></label>
+                                                    <input type="text" class="form-control form-control-lg" placeholder="Enter project's value in KES">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <h5 class="mb-4"><strong>Project Attachments</strong></h5>
+                                            </div>
+                                            <!-- this inputs are hidden but work. match IDs with their appropriate labels with the for attribute -->
+                                            <label class="col-sm-12 col-md-3 form-attach" for="input1">
+												<div class="id-container img-container">
+                                                    <span><img src="images/attachment-assets/001-certificate.svg"></span>
+                                                    <!-- document title -->
+													<h5>Land ownership document</h5>
+													
+													<small class="text-danger"><strong>No file selected</strong></small>
+													<!-- national id input box -->
+													<input type="file" accept="image/png, .jpeg, .jpg, image/gif,.pdf"  id="input1" required class="form-control  form-control-lg   nat-id d-none">
+												</div>
+                                            </label>
+
+                                            <!-- match id to the for attribute on the label -->
+                                            <label class="col-sm-12 col-md-3 form-attach" for="input2">
+												<div class="id-container img-container">
+                                                    <span><img src="images/attachment-assets/001-certificate.svg"></span>
+                                                    <!-- document title -->
+													<h5>Land ownership document</h5>
+													
+													<small class="text-danger"><strong>No file selected</strong></small>
+													<!-- match id to the for attribute on the label -->
+													<input type="file" accept="image/png, .jpeg, .jpg, image/gif,.pdf"  id="input2" required class="form-control  form-control-lg   nat-id d-none">
+												</div>
+                                            </label>
+
+                                            <!-- match id to the for attribute on the label -->
+                                            <label class="col-sm-12 col-md-3 form-attach" for="input3">
+												<div class="id-container img-container">
+                                                    <span><img src="images/attachment-assets/001-certificate.svg"></span>
+                                                    <!-- document title -->
+													<h5>Land ownership document</h5>
+													
+													<small class="text-danger"><strong>No file selected</strong></small>
+													<!-- match id to the for attribute on the label -->
+													<input type="file" accept="image/png, .jpeg, .jpg, image/gif,.pdf"  id="input3" required class="form-control  form-control-lg   nat-id d-none">
+												</div>
+											</label>
+
+
+
+
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+                                            <div class="col-12 ">
+                                                <h5 class="mb-4"><strong>Personnel In Charge </strong></h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="text-danger">Enter contractors identification number then search to confirm that they are registered into the system</p>
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <label><strong>Profession</strong></label>
+                                                <select class="selectpicker form-control" multiple title="Select attachment document(s)">
+                                                    <option>Architect</option>
+                                                    <option>Engineer</option>
+                                                    <option>Surveyor</option>                                                   
+                                                  </select>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <label><strong>Certificate No.<strong class="text-danger">*</strong></strong></label>
+                                                    <div class="form-inline w-100 d-flex">
+                                                        <input type="text" class="form-control form-control  form-control-lg     validate flex-grow-1" minlength="2" autofocus="" placeholder="Contractors identification number" required="">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-auto">
+                                                <div class="form-group">
+                                                    <label class="d-flex flex-row opacity-0">something</label>
+                                                    <button class="btn btn-primary btn--icon-text h-100" data-toggle="modal" data-target="#newContractor"><i class="zmdi zmdi-search"></i>Search</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="row contractors-details d-non">
+                                                    <div class="col-md-4 col-lg-3 col-sm-4">
+                                                        <div class="form-group">
+                                                            <label><strong>Full Names</strong></label>
+                                                            <input type="text" class="form-control form-control-lg" placeholder="" readonly disabled value="Not searched">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-lg-3 col-sm-4">
+                                                        <div class="form-group">
+                                                            <label><strong>Other Names</strong></label>
+                                                            <input type="text" class="form-control form-control-lg" placeholder="" readonly disabled value="Not searched">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-lg-3 col-sm-4">
+                                                        <div class="form-group">
+                                                            <label><strong>Phone Number</strong></label>
+                                                            <input type="text" class="form-control form-control-lg" placeholder="" readonly disabled value="Not searched">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-lg-3 col-sm-4 ">
+                                                        <div class="form-group">
+                                                            <label><strong>Email address</strong></label>
+                                                            <input type="text" class="form-control form-control-lg" placeholder="" readonly disabled value="Not searched">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-lg-3 col-sm-4 ">
+                                                        <div class="form-group">
+                                                            <label><strong>Box Number</strong></label>
+                                                            <input type="text" class="form-control form-control-lg" placeholder="" readonly disabled value="Not searched">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-12">
+
+                                                <a class="btn btn-primary btn-next ben-next text-white">Next <i class="ml-3 zmdi zmdi-arrow-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <div class="row clearfix form-gen-information animated fadeInRight d-none">
+                                            <div class="col-12">
+                                                <h4 class="card-title">Plot Details</h4>
+                                                <h6 class="card-subtitle">Enter the form bellow. Fields with <strong class="text-danger">(*)</strong> are required.</h6>
+                                                <hr>
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <h5 class="mb-4"><strong>Plot's general information</strong></h5>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Plot Number</strong> <strong class="text-danger">*</strong></label>
+                                                    <p><small>Enter plot number first and press search to check if it is already registered</small></p>
+                                                    <div class="form-inline w-100 d-flex">
+                                                        <input type="text" class="form-control form-control  form-control-lg     validate flex-grow-1" pattern="^[a-zA-Z]{2,30}$" minlength="2" autofocus placeholder="Enter plot number" required>
+                                                        <button class="btn btn-primary mb-2 btn--icon-text ml-2 form-control-lg"><i class="zmdi zmdi-search"></i>Search for Plot</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <label class="mb-0"><strong>Select Location from the Map</strong></label>
+                                                        <p><small>Double click to select a location on the map</small></p>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <label class="mb-0"><strong>Location details</strong></label>
+                                                        <p><small>Generated from the area selected on the map</small></p>
+                                                    </div>
+
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <div class="main-map-form">
+                                                            <div class="application-map" id="map"> </div>
+                                                            <!-- map serach input box -->
+                                                            <div class="form-group map-searcher">
+
+                                                                <input type="text" class="form-control  form-control-lg   form-control  form-control-lg  -lg text-black" placeholder="Search for a location" id="pac-input">
+                                                                <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="zmdi zmdi-close d-none"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="selected-point-details p-4 form-map-locations">
+                                                            <h6>Point Details</h6>
+
+                                                            <p class="mb-0"><strong>Address</strong></p>
+                                                            <p class="clicked-address text-danger">Not selected</p>
+
+                                                            <p class="mb-0"><strong>Ward</strong></p>
+                                                            <p class="clicked-ward text-danger">Not selected</p>
+
+                                                            <p class="mb-0"><strong>Street</strong></p>
+                                                            <p class="clicked-street text-danger">Not selected</p>
+
+                                                            <p class="mb-0"><strong>Sub County</strong></p>
+                                                            <p class="clicked-subcounty text-danger">Not selected</p>
+
+                                                            <input type="text" name="address" class="form-latitude d-none">
+                                                            <input type="text" name="address" class="form-longitude d-none">
+                                                            <input type="text" name="address" class="form-address d-none">
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 col-lg-3 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>UPN</strong><strong class="text-danger">*</strong></label>
+                                                    <input type="text" class="form-control form-control  form-control-lg    validate" pattern="^[a-zA-Z']{2,30}$" minlength="2" placeholder="Enter UPN number" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-2 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Area in Hectare</strong><strong class="text-danger">*</strong></label>
+                                                    <input type="text" class="form-control form-control  form-control-lg    validate" pattern="^[0-9a-zA-Z'\s]{2,100}$" minlength="2" placeholder="Enter Area in Ha">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-lg-3 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Value of Land</strong><strong class="text-danger">*</strong></label>
+                                                    <input type="text" class="form-control  form-control-lg  " placeholder="Enter Land's Value in KES">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-lg-2 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Annual Landrate</strong><strong class="text-danger">*</strong></label>
+                                                    <input type="text" class="form-control  form-control-lg  " placeholder="Enter Land rate charges">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-lg-2 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Initial Balance</strong><strong class="text-danger">*</strong></label>
+                                                    <input type="text" class="form-control  form-control-lg  " placeholder="Enter initial balance">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-lg-3 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Select Land Type</strong>><strong class="text-danger">*</strong></label>
+                                                            <select class="form-control form-control  form-control-lg   ">
+                                                                <option value="0" selected>-- Select land type --</option>
+                                                                <option value="residential">Residential</option>
+                                                                <option value="commercial">Commercial</option>
+                                                                <option value="mixed">Mixed</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-lg-3 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Land Use</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    validate" placeholder="Enter nature of Usage" minlength="2" required>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+                                            <hr>
+                                            <div class="col-12">
+                                                <h5 class="mb-4"><strong>Owner's Details</strong></h5>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Type of ownership<strong class="text-danger">*</strong></strong></label>
+                                                    <select name="" id="" title="please select your postal country" class="form-control owner-type form-control-lg  " placeholder="Country">
+														<option value="0">-- Type of Ownership --</option>
+														<option value="individual" selected>Individual</option>
+														<option value="company">Company</option>
+														
+
+													</select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="row individual-ownership  d-none animated fade-in-down">
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>First Name</strong> <strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    posta-form validate" pattern="^[0-9']{1,100000000000000000}$" minlength="1" required placeholder="Enter the postal address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Second Name</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" required class="form-control form-control  form-control-lg    validate" pattern="" minlength="1" placeholder="Enter second name">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>ID Number/Passport</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    city-form" minlength="1" placeholder="Enter Nat ID or PP Num">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row company-ownership d-none animated fade-in-down">
+                                                    <div class="col-sm-12 col-md-4">
+                                                        <div class="form-group">
+                                                            <label><strong>Company Name</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    phone-num validate" placeholder="Enter company's name">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-4">
+                                                        <div class="form-group">
+                                                            <label><strong class="text-capitalize">registration Number</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    phone-num validate" placeholder="Enter registration Number">
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Phone Number</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    phone-num validate" pattern="^[0-9']{10,11}$" minlength="9" required placeholder="Enter phone number">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Email Address</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="email" class="form-control form-control  form-control-lg    email-input validate" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                                                                id="id1" required placeholder="email@email.com">
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>KRA Pin</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    email-input validate" required placeholder="Enter KRA Pin">
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Sub-county</strong><strong class="text-danger">*</strong></label>
+                                                            <select class="form-control form-control  form-control-lg   ">
+                                                                <option value="0" selected>-- Select Sub-county --</option>
+                                                                <option value="residential">subcounty 1</option>
+                                                                <option value="commercial">subcounty 2</option>
+                                                                <option value="mixed">subcounty 3</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Wards</strong><strong class="text-danger">*</strong></label>
+                                                            <select class="form-control form-control  form-control-lg   ">
+                                                                <option value="0" selected>-- Select a ward --</option>
+                                                                <option value="residential">ward 1</option>
+                                                                <option value="commercial">Ward 2</option>
+                                                                <option value="mixed">ward 3</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label><strong>Town</strong><strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control form-control  form-control-lg    email-input validate" required placeholder="Enter Town">
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <a class="btn btn-light btn-border mr-3 btn-outline btn-prev "><i class="mr-3 zmdi zmdi-arrow-left"></i>Previous </a>
+                                                <a class="btn btn-primary occupation-next btn-next text-white">Next <i class="ml-3 zmdi zmdi-arrow-right"></i></a>
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+                                        <div class="row clearfix form-attach animated fadeInRight d-none">
+                                            <div class="col-12">
+                                                <h4 class="card-title">Project owner</h4>
+                                                <h6 class="card-subtitle">Enter the details of the project owner bellow</h6>
+                                                <hr>
+
+                                            </div>
+
+                                            <div class="col-12 mb-5">
+                                                <label><strong>Is the plot owner the owner of the project?</strong></label>
+                                                <div class="inline-form">
+                                                    <div class="radio radio--inline">
+                                                        <input type="radio" name="project-ownership" id="yes-owner">
+                                                        <label class="radio__label" for="yes-owner">Toggle this one</label>
+                                                    </div>
+
+                                                    <div class="radio radio--inline">
+                                                        <input type="radio" name="project-ownership" id="no-owner">
+                                                        <label class="radio__label" for="no-owner">No</label>
+                                                    </div>
+
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <label>Owner type</label>
+                                                    <select class="selectpicker form-control" multiple title="Choose owner type">
+                                                    <option>Individual</option>
+                                                    <option>Company</option>
+                                                   
+                                                  </select>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-8 col-sm-12">
+                                                <!-- show id=f its individual -->
+                                                <div class="row individual-application">
+                                                    <div class="col-md-6 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>Full Name</label>
+                                                            <input type="text" placeholder="Input the owner's full Name" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>ID number</label>
+                                                            <input type="text" placeholder="Enter ID number" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- show if its company -->
+                                                <div class="row individual-application d-none">
+                                                    <div class="col-md-6 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>Company Name</label>
+                                                            <input type="text" placeholder="Enter company's name" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>KRA number</label>
+                                                            <input type="text" placeholder="KRA number" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="form-group">
+                                                    <label>Phone Number <span class="text-danger">*</span></label>
+                                                    <input type="text" placeholder="Enter phone number" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-3">
+                                                <div class="form-group">
+                                                    <label>Email address<span class="text-danger">*</span></label>
+                                                    <input type="email" placeholder="Enter email address" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-5">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label><strong>Postal address <span class="text-danger">*</span></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter postal Number">
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <label><strong>Postal town <span class="text-danger">*</span></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter postal Number">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+                                            <div class="col-12 mt-5">
+                                                <a class="btn btn-light btn-border mr-3 btn-outline btn-prev"><i class="mr-3 zmdi zmdi-arrow-left"></i>Previous </a>
+                                                <a class="btn btn-primary fund-next text-white btn-next">Next <i class="ml-3 zmdi zmdi-arrow-right"></i></a>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row clearfix form-save animated fadeInRight d-none">
+                                            <div class="col-12">
+
+                                                <h6 class="card-subtitle">
+                                                    Select Mobile money for the applicant to make payment now via a mobile money wallet instantly or select <strong>print bill</strong> for the applicant to make payment using the bll number on a later date.
+                                                </h6>
+                                                <hr>
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <h5 class="mb-4"><strong>Applicant details</strong></h5>
+                                            </div>
+
+
+                                            <div class="col-sm-12 col-md-6 radio-main-container">
+                                                <label><strong>Applicant would wish to activate account through which method?</strong></label>
+
+                                                <div class="w-100 payment-methods-radios">
+                                                    <div class="radio method-mpesa">
+                                                        <input type="radio" value="mpesa" name="pay-method" id="method-mpesa">
+                                                        <label class="radio__label" for="method-mpesa">Mobile Money</label>
+                                                    </div>
+
+                                                    <div class="radio method-cash">
+                                                        <input type="radio" required name="pay-method" id="print-bill" value="print_bill" selected>
+                                                        <label class="radio__label" for="print-bill">Print bill</label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12 my-5">
+                                                        <div class="notes">
+                                                            <p>
+                                                                Kindly note the application fee is <strong>KES 1,000.</strong> Choose to either create a bill or allow the client to make payment now via a <strong>Mobile wallet</strong>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="act-mpesa col-sm-12 col-md-12 animated fadeIn d-none">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="mb-0 pb-0"><strong>Phone number</strong><strong class="text-danger">*</strong></label>
+                                                                <p><small>Enter the phone number the client wishes to pay with</small></p>
+                                                                <input type="text" class="form-control  form-control-lg   must-input mpesa-number flex-grow-1" placeholder="Enter Mpesa number">
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="act-cash col-12 animated fadeIn d-none">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p><strong>How much money have you received from the applicant</strong></p>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label>Amount<strong class="text-danger">*</strong></label>
+                                                            <input type="text" class="form-control  form-control-lg   must-input" placeholder="KSH">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mt-5">
+                                                <a class="btn btn-light btn-border mr-3 btn-outline btn-prev"><i class="mr-3 zmdi zmdi-arrow-left"></i>Previous </a>
+                                                <button type="submit" class="btn btn-primary btn-submit">Submit Application<i class="ml-3 zmdi zmdi-mail-reply-all flipx"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer hidden-xs-down">
+                <p class="d-none">Powered by RevenueSure</p>
+            </footer>d by<a href="https://nouveta.tech/" target="new"> Nouveta LTD</a></p>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Older IE warning message -->
+    <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+    <!-- Javascript -->
+    <!-- Vendors -->
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/popper.js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="vendors/salvattore/salvattore.min.js"></script>
+    <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+
+    <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="vendors/select2/js/select2.full.min.js"></script>
+    <script src="vendors/dropzone/dropzone.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/nouislider/nouislider.min.js"></script>
+    <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+    <script src="vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+    <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+    <script src="vendors/autosize/autosize.min.js"></script>
+    <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+
+    <!-- Vendors: Data tables -->
+    <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+    <script src="vendors/jszip/jszip.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+
+    <!-- Charts and maps-->
+    <script src="demo/js/flot-charts/curved-line.js"></script>
+    <script src="demo/js/flot-charts/dynamic.js"></script>
+    <script src="demo/js/flot-charts/line.js"></script>
+    <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+    <script src="demo/js/other-charts.js"></script>
+    <script src="demo/js/jqvmap.js"></script>
+
+    <!--high chart-->
+
+    <script src="vendors/highcharts/highchart.js"></script>
+    <script src="vendors/highcharts/data.js"></script>
+    <script src="vendors/highcharts/drilldown.js"></script>
+    <script src="vendors/highcharts/exporting.js"></script>
+    <script src="vendors/highcharts/export-data.js"></script>
+    <script src="vendors/highcharts/accesibility.js"></script>
+
+    <!--form validation-->
+    <script src="vendors/jq-validation/jquery.validate.min.js"></script>
+    <script src="vendors/jq-validation/additional-methods.min.js"></script>
+
+    <script src="js/highcharts/highcharts-more.js"></script>
+    <!--owl corousel-->
+    <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- App functions and actions -->
+    <script src="js/wow.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mapping-data.js"></script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap">
+    </script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8&callback=initMap&libraries=places&v=weekly" defer>
+    </script>
+    <script>
+        $('.membership-form').validate();
+    </script>
+
+    <!-- Html include -->
+    <script>
+        includeHTML();
+    </script>
+
+
+</body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>
