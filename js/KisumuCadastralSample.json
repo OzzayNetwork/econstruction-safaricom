@@ -7,7 +7,9 @@
             "properties": {
                 "Parcel_No": "299",
                 "Area_Ha": "3.10206e-01",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "2500",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2574,7 +2576,9 @@
             "properties": {
                 "Parcel_No": "139",
                 "Area_Ha": "9.63218e-02",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "78600",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3007,7 +3011,9 @@
             "properties": {
                 "Parcel_No": "148",
                 "Area_Ha": "8.94368e-02",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "78600",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3482,7 +3488,9 @@
             "properties": {
                 "Parcel_No": "155",
                 "Area_Ha": "8.12352e-02",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "78600",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
@@ -18094,7 +18102,9 @@
             "properties": {
                 "Parcel_No": "217",
                 "Area_Ha": "1.00444e-01",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "234500",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
@@ -46997,7 +47007,9 @@
             "properties": {
                 "Parcel_No": "0",
                 "Area_Ha": "6.41947e-02",
-                "Block_Name": "Kisumu Municipality"
+                "Block_Name": "Kisumu Municipality",
+                "Arrears": "2500",
+                "Status":"uncompliant"
             },
             "geometry": {
                 "type": "Polygon",
