@@ -5,59 +5,10 @@ function initMap() {
         zoom: 14,
     });
 
-    // Generate two random cadastral parcels (simplified)
-    const parcel1 = {
-        type: "Feature",
-        geometry: {
-            type: "Polygon",
-            coordinates: [
-                [
-                    [34.771, -0.092],
-                    [34.772, -0.092],
-                    [34.772, -0.093],
-                    [34.771, -0.093],
-                    [34.771, -0.092],
-                ],
-            ],
-        },
-        properties: {
-            parcel_id: "Parcel A",
-            owner: "John Doe",
-        },
-    };
-
-    const parcel2 = {
-        type: "Feature",
-        geometry: {
-            type: "Polygon",
-            coordinates: [
-                [
-                    [34.770, -0.092],
-                    [34.770, -0.091],
-                    [34.771, -0.091],
-                    [34.771, -0.092],
-                    [34.770, -0.092],
-                ],
-            ],
-        },
-        properties: {
-            parcel_id: "Parcel B",
-            owner: "Jane Smith",
-        },
-    };
-
-    const cadastralData = {
-        type: "FeatureCollection",
-        features: [parcel1, parcel2],
-    };
-
     // Create a GeoJSON layer for cadastral data
     const cadastralLayer = new google.maps.Data({
         map: map,
     });
-
-    // Add cadastral data to the map
-    cadastralLayer.addGeoJson(cadastralData);
 
     // Style cadastral parcels
     cadastralLayer.setStyle({
@@ -66,4 +17,15 @@ function initMap() {
         strokeColor: "blue",
         strokeWeight: 2,
     });
+
+    // Load external GeoJSON file and add it to the map
+    fetch("js/KisumuCadastralSample.geojson")
+        .then((response) => response.json())
+        .then((data) => {
+            // Add cadastral data from the external file to the map
+            cadastralLayer.addGeoJson(data);
+        })
+        .catch((error) => {
+            console.error("Error loading GeoJSON file:", error);
+        });
 }
