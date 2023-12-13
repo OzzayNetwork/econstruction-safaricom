@@ -2,10 +2,11 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {
-            lat: -0.110005478987467,
-            lng:  34.76538275065549
+            lat: -1.345316594258382, 
+            lng:  36.69092174375093
+            
         },
-        zoom: 16,
+        zoom: 14,
     });
 
     // Create a GeoJSON layer for cadastral data
@@ -14,12 +15,20 @@ function initMap() {
         clickable: true, // Enable default context menu
     });
 
+    // Create a GeoJSON layer for the county cadastral layer
+    const cadastralLayerCounty = new google.maps.Data({
+        map: map,
+    });
+    
+
     // Load external GeoJSON file and add it to the map
-    fetch("js/KisumuCadastralSample.json")
+    fetch("js/NairobiCadastralSample.json")
         .then((response) => response.json())
         .then((data) => {
             // Add cadastral data from the external file to the map
             cadastralLayer.addGeoJson(data);
+            console.log(data.features[1] )
+            console.log(data.features[0] )
 
             // Set up styling for "uncompliant" parcels
             cadastralLayer.setStyle(function (feature) {
@@ -51,7 +60,7 @@ function initMap() {
 
                 if (Arrears) {
                     // Show the Arrears information
-                    $("#follow-text").html(`Outstanding Arrears: <strong class='text-danger fw-bold'>KES `+formatWithCommas(Arrears)+`</strong> <br> <span class="text-capitalize text-info">Click to View More</span>`).removeClass('d-none');
+                    $("#follow-text").html(`Outstanding Arrears: <strong class='text-danger fw-bold'>KES ` + formatWithCommas(Arrears) + `</strong> <br> <span class="text-capitalize text-info">Click to View More</span>`).removeClass('d-none');
                 } else {
                     $("#follow-text").html("No Arrears <br> <span class='text-info'>Click for More Information</span>").removeClass('d-none');
                 }
@@ -62,30 +71,30 @@ function initMap() {
 
                 const feature = event.feature;
                 const Arrears = feature.getProperty("Arrears"); // Change to the actual property name
-                const lrNumber=feature.getProperty("Parcel_No")
+                const lrNumber = feature.getProperty("Parcel_No")
                 $('.lr-no').text(lrNumber)
                 const lat = event.latLng.lat(); // Get latitude of the clicked point
                 const lng = event.latLng.lng(); // Get longitude of the clicked point
-                const size =feature.getProperty("Area_Ha")
-                const Block_Name =feature.getProperty("Block_Name")
+                const size = feature.getProperty("Area_Ha")
+                const Block_Name = feature.getProperty("Block_Name")
 
                 $('.blockName').text(Block_Name)
                 $('.size').text(size)
-            
+
                 // Fetch the address based on coordinates
                 getAddressFromCoordinates(lat, lng, function (address) {
                     $('.lr-no').text(lrNumber);
                     $('.the-clicked-address').text(address);
 
-                    
-            
+
+
                     if (Arrears) {
                         // Show the Arrears information
                         $('.arrears').text("KES " + formatWithCommas(Arrears));
                     } else {
                         $('.arrears').text("KES 0.00");
                     }
-            
+
                     $('#percel-details').removeClass('left-100').siblings().addClass('left-100');
                     $('.main-map-container .ma-backdrop').removeClass('d-none');
                     $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
@@ -96,12 +105,15 @@ function initMap() {
             cadastralLayer.addListener('mouseout', function (event) {
                 // Hide the follow-text div and perform any desired actions
                 $("#follow-text").addClass('d-none');
-               // alert("Mouse is out of the parcel");
+                // alert("Mouse is out of the parcel");
             });
         })
         .catch((error) => {
             console.error("Error loading GeoJSON file:", error);
         });
+
+
+    
 }
 
 // following mouse text
@@ -132,14 +144,14 @@ function formatWithCommas(number) {
 
 
 
-$('.close-aside').on('click', function() {
+$('.close-aside').on('click', function () {
     $(this).parent().parent().addClass('left-100');
     $('.ma-backdrop').addClass('d-none');
     // marker.setAnimation(null);
     removeMarkers();
 });
 
-$('.main-map-container .ma-backdrop').on('click', function() {
+$('.main-map-container .ma-backdrop').on('click', function () {
     $('.main-map-container aside').addClass('left-100');
     $(this).addClass('d-none');
 });
@@ -151,7 +163,9 @@ function getAddressFromCoordinates(lat, lng, callback) {
     const geocoder = new google.maps.Geocoder();
     const latLng = new google.maps.LatLng(lat, lng);
 
-    geocoder.geocode({ 'location': latLng }, function (results, status) {
+    geocoder.geocode({
+        'location': latLng
+    }, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             if (results[0]) {
                 const formattedAddress = results[0].formatted_address;

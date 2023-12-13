@@ -1,8 +1,41 @@
+const mapStyles = [
+    {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [
+            {
+                color: "#a2daf2", // Set water color
+            },
+        ],
+    },
+    {
+        featureType: "landscape",
+        elementType: "all",
+        stylers: [
+            {
+                color: "#f2e5d4", // Set landscape color
+            },
+        ],
+    },
+    {
+        featureType: "poi",
+        elementType: "geometry",
+        stylers: [
+            {
+                color: "#e9e5dc", // Set POI color
+            },
+        ],
+    },
+    // Add more styles as needed
+];
+
+
 // Initialize the map
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -0.09275130113487509, lng: 34.7716000799302 },
         zoom: 14,
+        styles: mapStyles, 
     });
 
     // Generate two random cadastral parcels (simplified)
