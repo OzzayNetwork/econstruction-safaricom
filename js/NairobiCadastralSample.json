@@ -172,7 +172,9 @@
 				"shape_leng": 568.272584594,
 				"shape_area": 18183.5227088,
 				"id": "00be9dde-88ca-46ef-a44a-1ac85eb64007",
-				"deleted": false
+				"deleted": false,
+                "Arrears": "234500",
+                "Status":"uncompliant"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -304,7 +306,9 @@
 				"shape_leng": 311.551687188,
 				"shape_area": 5305.10533211,
 				"id": "018baef2-0e6a-4a7f-9949-ce3c6b922888",
-				"deleted": false
+				"deleted": false,
+                "Arrears": "14363",
+                "Status":"uncompliant"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -396,7 +400,9 @@
 				"shape_leng": 501.767564488,
 				"shape_area": 13997.3147957,
 				"id": "024786e7-d23f-4ebf-8d53-2b7178768039",
-				"deleted": false
+				"deleted": false,
+                "Arrears": "123435",
+                "Status":"uncompliant"
 			},
 			"geometry": {
 				"type": "MultiPolygon",
@@ -550,7 +556,9 @@
 				"shape_leng": 283.126228675,
 				"shape_area": 4546.09582194,
 				"id": "03437ac1-c64e-4784-8572-3945aee0c894",
-				"deleted": false
+				"deleted": false,
+                "Arrears": "234500",
+                "Status":"uncompliant"
 			},
 			"geometry": {
 				"type": "MultiPolygon",

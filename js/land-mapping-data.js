@@ -76,7 +76,10 @@ function initMap() {
                 const lat = event.latLng.lat(); // Get latitude of the clicked point
                 const lng = event.latLng.lng(); // Get longitude of the clicked point
                 const size = feature.getProperty("Area_Ha")
-                const Block_Name = feature.getProperty("Block_Name")
+                const Block_Name = feature.getProperty("plot_no")
+                if(Block_Name===""){
+                    Block_Name="-"
+                }
 
                 $('.blockName').text(Block_Name)
                 $('.size').text(size)
