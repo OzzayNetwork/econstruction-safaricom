@@ -362,7 +362,7 @@ function initMap() {
         axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: location,
-                    key: 'AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8'
+                    key: 'AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI'
                 }
 
 
@@ -625,7 +625,7 @@ function initMap() {
 
     // reverse geo coding
     function reverseGeocoding(Latitude, longitude) {
-        const KEY = "AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8";
+        const KEY = "AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI";
         const LAT = -1.270102;
         const LNG = 36.8589333;
         let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${Latitude},${longitude}&key=${KEY}`;
