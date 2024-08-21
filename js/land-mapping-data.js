@@ -2,8 +2,8 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {
-            lat: -0.1155716352657213, 
-            lng: 34.75083283332792
+            lat:-1.7238518372012843, 
+            lng: 36.666583983579585
             
         },
         zoom: 14,
@@ -22,7 +22,7 @@ function initMap() {
     
 
     // Load external GeoJSON file and add it to the map
-    fetch("js/KisumuCadastralSample.json")
+    fetch("js/kajiadoCadastral.json")
         .then((response) => response.json())
         .then((data) => {
             // Add cadastral data from the external file to the map
