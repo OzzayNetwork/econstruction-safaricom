@@ -6,7 +6,7 @@ function initMap() {
             lng: 36.666583983579585
             
         },
-        zoom: 14,
+        zoom: 13,
     });
 
     // Create a GeoJSON layer for cadastral data
