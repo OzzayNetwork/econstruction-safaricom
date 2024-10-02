@@ -2,11 +2,13 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {
-            lat:-1.7238518372012843, 
-            lng: 36.666583983579585
+            lat:-0.1058467359517642, 
+            lng: 34.754475995205325
+
+            
             
         },
-        zoom: 13,
+        zoom: 16,
     });
 
     // Create a GeoJSON layer for cadastral data
@@ -22,7 +24,12 @@ function initMap() {
     
 
     // Load external GeoJSON file and add it to the map
-    fetch("js/kajiadoCadastral.json")
+   // fetch("js/kajiadoCadastral.json")
+
+    //fetch("js/KisumuCadastralSample.json")
+    fetch("js/KisumuCadastralSample2.json")
+
+   // C:\My Projects\Levetot\Safaricom Revenu Projects\Safaricom\e-construction\js\KisumuCadastralSample.json
         .then((response) => response.json())
         .then((data) => {
             // Add cadastral data from the external file to the map
@@ -48,6 +55,18 @@ function initMap() {
                         strokeWeight: 2,
                     };
                 }
+
+
+                if (status && status.toLowerCase() === "testing") {
+                    styleOptions = {
+                        fillColor: "yellow",
+                        fillOpacity: 0.8,
+                        strokeColor: "yellow",
+                        strokeWeight: 2,
+                    };
+                }
+
+               // alert(status)
 
                 return styleOptions;
             });

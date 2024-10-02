@@ -47289,6 +47289,8 @@
                     ]
                 ]
             }
-        }
+        },
+        { "type": "Feature", "properties": { "Status":"testing","Block_Name": "DAGO REGISTRATION SECTION", "Sheet_No": "Sheet 1", "LR_No": null, "OTHERS": null, "Plot_No": 2249, "UPN": "384-00361", "CustomerSu": "DORCAS ADHIAMBO WAYIERA", "BlockLRNum": "KSM/DAGO", "PlotNumber": 2249, "ZoneWardNa": "DAGO", "MarketCent": "KIBOSWA MKT", "PhysicalAd": "DAGO", "AreaInHa": 0.14, "SiteValue": 100000, "GroundRent": 0, "LandRates": 1500, "OtherCharg": 0, "TotalAnnua": 1500, "CurrentBal": 26111.0 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 694625.366050777374767, 9996342.748687159270048 ], [ 694597.309016233659349, 9996328.744070304557681 ], [ 694591.643994996324182, 9996330.022283717989922 ], [ 694578.058491555508226, 9996365.973350577056408 ], [ 694580.44871041411534, 9996372.288072992116213 ], [ 694605.352325894637033, 9996381.984076758846641 ], [ 694625.366050777374767, 9996342.748687159270048 ] ] ] ] } }
+
     ]
 }
