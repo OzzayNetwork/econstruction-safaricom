@@ -1,4 +1,5 @@
 // Initialize the map
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {
